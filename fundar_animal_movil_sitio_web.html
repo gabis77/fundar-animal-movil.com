@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fundar Animal Móvil — Traslado de Mascotas</title>
+  <meta name="description" content="Servicio profesional de traslado de mascotas: traslados seguros, transporte adaptado y atención veterinaria en ruta." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{
+      --accent:#2b8aef;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.45}
+    .container{max-width:1100px;margin:32px auto;padding:0 20px}
+
+    header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    nav{display:flex;gap:18px;align-items:center}
+    a.btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    a.link{color:var(--muted);text-decoration:none}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:18px}
+    .card{background:var(--card);padding:26px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+    h1{margin:0 0 8px;font-size:28px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+
+    .features{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .feature{display:flex;gap:12px;align-items:center;background:#f1f5f9;padding:12px;border-radius:12px}
+    .feature svg{width:28px;height:28px}
+
+    form .row{display:flex;gap:10px}
+    form input, form textarea, form select{width:100%;padding:10px;border-radius:10px;border:1px solid #e6edf3;background:white}
+    .muted{color:var(--muted);font-size:13px}
+
+    section{margin-top:26px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .service{padding:18px;border-radius:12px}
+
+    footer{margin-top:40px;padding:26px 0;color:var(--muted);font-size:14px;text-align:center}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .grid-3{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">FAM</div>
+        <div>
+          <div style="font-weight:700">Fundar Animal Móvil</div>
+          <div class="muted" style="font-size:13px">Traslados seguros para tu mascota</div>
+        </div>
+      </div>
+      <nav>
+        <a class="link" href="#servicios">Servicios</a>
+        <a class="link" href="#precios">Precios</a>
+        <a class="link" href="#contacto">Contacto</a>
+        <a class="btn" href="#reserva">Reservar</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="card">
+            <h1>Traslado seguro y cómodo para tu mascota</h1>
+            <p class="lead">En Fundar Animal Móvil ofrecemos transporte especializado para perros, gatos y mascotas pequeñas. Vehículos adaptados, control de estrés, y acompañamiento certificado.</p>
+
+            <div class="features">
+              <div class="feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2 4 4 8-8 4 4v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><div><strong>Seguridad</strong><div class="muted">Transportes con cinturón y jaulas seguras</div></div></div>
+              <div class="feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M5 9h14M7 22h10"/></svg><div><strong>Comodidad</strong><div class="muted">Vehículos con climatización y paños antideslizantes</div></div></div>
+              <div class="feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><div><strong>Profesional</strong><div class="muted">Personal capacitado en manejo animal</div></div></div>
+            </div>
+
+            <section id="servicios">
+              <h3 style="margin-top:16px">Nuestros servicios</h3>
+              <div class="grid-3" style="margin-top:12px">
+                <div class="service card">
+                  <h4>Traslado Local</h4>
+                  <p class="muted">Recogida y entrega dentro de la ciudad. Ideal para vet, peluquería o traslados cortos.</p>
+                </div>
+                <div class="service card">
+                  <h4>Traslado Interurbano</h4>
+                  <p class="muted">Viajes entre ciudades con paradas programadas para descanso.</p>
+                </div>
+                <div class="service card">
+                  <h4>Traslado VIP</h4>
+                  <p class="muted">Acompañamiento personalizado, transporte en jaula premium y control de temperatura.</p>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+          <section id="precios">
+            <div class="card" style="margin-top:14px;display:flex;justify-content:space-between;align-items:center;gap:20px">
+              <div>
+                <h3 style="margin:0">Tarifas claras</h3>
+                <p class="muted" style="margin:6px 0 0">Precios base desde $XX (distancia, horario y tamaño de mascota pueden afectar el costo).</p>
+              </div>
+              <div>
+                <a class="btn" href="#reserva">calcula </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 style="margin-top:0">Reserva     tu    traslado</h3>
+            <form id="booking" action="#" onsubmit="handleSubmit(event)">
+              <div style="margin-bottom:8px">
+                <label class="muted">Nombre</label>
+                <input required name="name" placeholder="Nombre completo" />
+              </div>
+              <div style="margin-bottom:8px">
+                <label class="muted">Teléfono</label>
+                <input required name="phone" placeholder="+54 9 1168514093" />
+              </div>
+
+              <div class="row" style="margin-bottom:8px">
+                <div style="flex:1">
+                  <label class="muted">Origen</label>
+                  <input required name="from" placeholder="Dirección de recogida" />
+                </div>
+                <div style="flex:1">
+                  <label class="muted">Destino</label>
+                  <input required name="to" placeholder="Dirección de entrega" />
+                </div>
+              </div>
+
+              <div class="row" style="margin-bottom:8px">
+                <div style="flex:1">
+                  <label class="muted">Fecha</label>
+                  <input type="date" required name="date" />
+                </div>
+                <div style="flex:1">
+                  <label class="muted">Hora</label>
+                  <input type="time" required name="time" />
+                </div>
+              </div>
+
+              <div style="margin-bottom:8px">
+                <label class="muted">Mascota</label>
+                <select name="pet" required>
+                  <option value="perro">Perro</option>
+                  <option value="gato">Gato</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div style="margin-bottom:8px">
+                <label class="muted">Tamaño / Peso</label>
+                <input name="size" placeholder="Pequeño / Mediano / Grande - peso aproximado" />
+              </div>
+
+              <div style="margin-bottom:8px">
+                <label class="muted">Notas</label>
+                <textarea name="notes" rows="3" placeholder="Necesidades especiales, medicación, comportamiento"></textarea>
+              </div>
+
+              <div style="display:flex;gap:8px;align-items:center">
+                <button class="btn" type="submit">Enviar solicitud</button>
+                <div class="muted" style="font-size:12px">Te respondemos en menos de 24h</div>
+              </div>
+            </form>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h4 style="margin:0">Contacto rápido</h4>
+            <p class="muted" style="margin:8px 0 0">Tel: +54 9 1168514093<br/>Email: braiangabrielsilva_93@gmail.com</p>
+          </div>
+        </aside>
+      </section>
+
+      <section id="mas" class="card" style="margin-top:18px">
+        <h3 style="margin-top:0">¿Por qué elegir Fundar Animal Móvil?</h3>
+        <ul class="muted">
+          <li>Unidad adaptada con sistema anti-vibración.</li>
+          <li>Choferes entrenados y con experiencia en manejo animal.</li>
+          <li>Coordinación con veterinarias y soporte en ruta si hace falta.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="contacto" style="margin-top:18px">
+        <h3 style="margin-top:0">Preguntas frecuentes</h3>
+        <details><summary>¿Aceptan mascotas agresivas?</summary><p class="muted">Evaluamos cada caso. Requiere jaula y medidas de seguridad adicionales.</p></details>
+        <details><summary>¿Necesito cartilla sanitaria?</summary><p class="muted">Recomendamos llevar documentación y vacunas al día para traslados interurbanos.</p></details>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="muted">Fundar Animal Móvil © <span id="year"></span> — Transporte responsable de mascotas</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target).entries());
+      // Aquí: enviar a servidor real (AJAX / fetch). Por ahora mostramos en consola y alerta.
+      console.log('Solicitud de traslado:', data);
+      alert('Gracias — tu solicitud fue enviada. Nos comunicaremos a la brevedad.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
